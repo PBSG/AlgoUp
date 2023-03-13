@@ -1,0 +1,32 @@
+{
+  "name": "algoup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"nodemon server\" \"cd client && npm start\"",
+    "build": "rm -rf public && cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PBSG/AlgoUp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PBSG/AlgoUp/issues"
+  },
+  "homepage": "https://github.com/PBSG/AlgoUp#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.21",
+    "tslint": "^6.1.3",
+    "typescript": "^4.9.5"
+  }
+}
